@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary & Decimal Converter</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
+<div class="calculator">
+    <div class="converter">
+        <div class="keyboard_display">
+            <div class="keyboard">
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key" id="all_clear">AC</button>
+                <button class="key">0</button>
+                <button class="key" id="equals">=</button>
+            </div>
+        </div>
+        <!-- Área de Inputs -->
+        <div class="inputs">
+            <label for="binary">Binary</label>
+            <input type="text" id="binary" class="input" placeholder="Enter binary value">
+            <label for="hex">Hexa</label>
+            <input type="text" id="hex" class="input" placeholder="Enter hexadecimal value">
+            <label for="octa">Octa</label>
+            <input type="text" id="octa" class="input" placeholder="Enter octal value">
+            <label for="decimal">Decimal</label>
+            <input type="text" id="decimal" class="input" placeholder="Enter decimal value">
+        </div>
+    </div>
+</div>
 </body>
 </html>
