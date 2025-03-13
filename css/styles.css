@@ -1,3 +1,74 @@
+/*Overall style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(135deg, #0b2e59,#2a044a);
+}
+
+/*Converter style*/
+.converter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 700px;
+    border-radius: 16px;
+    border: 3px solid #6a6a6a;
+    background: #2d2d2d;
+    box-shadow: 0px 3px 15px rgba(81, 81, 81, 0.5);
+}
+
+
+/*Keyboard style*/
+.keyboard_display {
+    background: transparent;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.key {
+    border-radius: 8px;
+    border: none;
+    background: #4c4c4c;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*Results style*/
+.value_display {
+    background: green;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
 * {
     margin: 0;
     padding: 0;
@@ -13,59 +84,91 @@ body {
     background: linear-gradient(135deg, #000000, rgba(19, 6, 87, 0.92));
 }
 
-.converter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    width: 700px;
-    border-radius: 15px;
+.convertor {
+    width: 330px;
+    padding: 10px;
     border: 3px solid lightgray;
+    border-radius: 16px;
     background: #2d2d2d;
     box-shadow: 0px 3px 15px rgba(115, 115, 115, 0.5);
 }
 
-.keyboard_display {
-    width: 50%;
-    height: 100%;
+.keys {
 }
-.keyboard{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.key{
-    border-radius: 20px;
-    border: 2px solid gray;
+
+.selection {
     background: transparent;
+    border: none;
+    outline: none;
+    color: #28a745;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#typeButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: transparent;
+}
+
+input {
+    width: 100%;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+button.keys,
+button.equal,
+button.symbols {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button.keys {
+    background: #3a3a3a;
     color: white;
 }
-.inputs{
-    width: 50%;
-    height: 100%;
+
+button.equal {
+    background: #6f42c1;
     color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    gap: 20px;
-    padding: 20px;
 }
-.key:hover{
-    background: #f1f1f1;
-    color: black;
+
+button.symbols {
+    background: #fd7e14;
+    color: white;
 }
-#equals{
-    background: #fd7e14
+
+.keyboard {
+    display: flex;
+    justify-content: center;
 }
-#equals:hover{
-    background: #1e7e34;
+
+button.keys:hover {
+    background: #28a745;
 }
-#all_clear{
-    background: #e30909;
+button.equal:hover {
+    background: #a3a00d;
 }
-#all_clear:hover{
-    background: #00bfff;
+button.symbols:hover {
+    background: #149cfd;
 }
+*/
