@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 350px;
-    width: 700px;
+    width: 800px;
     border-radius: 16px;
     border: 2px solid #616161;
     background: #1A1A1A;
@@ -38,10 +38,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+.value_display{
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    gap: 5px;
+}
 
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 16px;
     width: 100%;
@@ -62,161 +73,70 @@ body {
     font-weight: bold;
     font-size: 30px;
     transition: background 0.3s ease;
+    user-select: none;
+}
+.space {
+    border-radius: 8px;
+    border: none;
+    background: #2D2D2D;
+    font-size: 30px;
 }
 
 /*Results style*/
-.value_display {
-    background: transparent ;
-    display: flex;
-    flex-direction: column;
-    font: bold 14px "Arial", Verdana, sans-serif;
-    width: 50%;
-    height: 100%;
-    font-size: 20px;
-    justify-content: center;
-    color: white;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    gap: 20px;
-}
 .input-group{
-
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 input{
-    background: transparent;
+    background: #2D2D2D;
     border: 1px solid #616161;
     border-radius: 8px;
     width: 100%;
+    height: 100%;
     font-size: 20px;
     color: white;
-    padding: 5px;
 }
+.number-type{
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
 
 /*Hovers*/
 #all_clear:hover {
-    background: #8c2e0b;
+    background: #671f0b;
 }
 #equals:hover {
     background: #113c93;
 }
 .key:hover {
-    background: #4c4c4c;
+    background: #404040;
 }
-.key:active {
+
+/*Actives*/
+#all_clear:active {
+    background: #D84B16;
+    transition: none !important;
+}
+#equals:active {
     background: #2979FF;
     transition: none !important;
 }
-
-
-
-
-
-
-
-
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.key:active {
+    background: #858585;
+    transition: none !important;
 }
-
-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #000000, rgba(19, 6, 87, 0.92));
-}
-
-.convertor {
-    width: 330px;
-    padding: 10px;
-    border: 3px solid lightgray;
-    border-radius: 16px;
-    background: #2d2d2d;
-    box-shadow: 0px 3px 15px rgba(115, 115, 115, 0.5);
-}
-
-.keys {
-}
-
-.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.selection {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #28a745;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#typeButtons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    background: transparent;
-}
-
-input {
-    width: 100%;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    text-align: right;
-    cursor: pointer;
-}
-
-button.keys,
-button.equal,
-button.symbols {
-    border: none;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-button.keys {
-    background: #3a3a3a;
-    color: white;
-}
-
-button.equal {
-    background: #6f42c1;
-    color: white;
-}
-
-button.symbols {
-    background: #fd7e14;
-    color: white;
-}
-
-.keyboard {
-    display: flex;
-    justify-content: center;
-}
-
-button.keys:hover {
-    background: #28a745;
-}
-button.equal:hover {
-    background: #a3a00d;
-}
-button.symbols:hover {
-    background: #149cfd;
-}
-*/
