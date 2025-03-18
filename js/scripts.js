@@ -114,3 +114,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial state with decimal selected
     updateKeyStates('dec', document.getElementById('decimal_result'));
 });
+

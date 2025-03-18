@@ -1,0 +1,33 @@
+{
+    "name": "Binary & Decimal Converter",
+    "short_name": "Converter",
+    "start_url": "/",
+    "id": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2196f3",
+    "icons": [
+        {
+            "src": "./assets/img/calculator.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./assets/img/thumb.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Desktop Screenshot"
+        },
+        {
+            "src": "./assets/img/mobile.png",
+            "sizes": "720x1280",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Mobile Screenshot"
+        }
+    ]
+}
