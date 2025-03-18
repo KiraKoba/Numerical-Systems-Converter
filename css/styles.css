@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -8,13 +8,14 @@ body{
 
 }
 
-.container{
+.container {
     display: flex;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
+
 /*Overall style*/
 * {
     margin: 0;
@@ -28,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(#2B0E4A,#000000);
+    background: radial-gradient(#2B0E4A, #000000);
 }
 
 /*Converter style*/
@@ -55,7 +56,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.value_display{
+
+.value_display {
     color: white;
     width: 50%;
     height: 100%;
@@ -76,7 +78,7 @@ body {
     height: 100%;
 }
 
-#all_clear{
+#all_clear {
     background: #D84B16;
 }
 
@@ -90,6 +92,7 @@ body {
     transition: background 0.3s ease;
     user-select: none;
 }
+
 .space {
     border-radius: 8px;
     border: none;
@@ -98,7 +101,7 @@ body {
 }
 
 /*Results style*/
-.input-group{
+.input-group {
     width: 100%;
     height: 50px;
     border-radius: 8px;
@@ -109,12 +112,14 @@ body {
     align-items: center;
     grid-gap: 12px;
 }
-.value{
+
+.value {
     color: white;
     width: 100%;
     height: 50%;
 }
-#values{
+
+#values {
     text-align: right;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -123,7 +128,7 @@ body {
     outline: none;
 }
 
-input{
+input {
     background: transparent;
     border: none;
     width: 100%;
@@ -131,7 +136,8 @@ input{
     font-size: 20px;
     color: white;
 }
-.number-type{
+
+.number-type {
     width: 20%;
     height: 100%;
     padding: 10px;
@@ -141,8 +147,8 @@ input{
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
-
 
 /*Hovers*/
 #all_clear:hover {
@@ -151,7 +157,9 @@ input{
 
 .key:hover {
     background: #404040;
+    cursor: pointer;
 }
+
 .input-group:hover {
     background: #404040;
 }
@@ -168,7 +176,7 @@ input{
 }
 
 /*Disabled buttons*/
-button.disabled{
+button.disabled {
     background: #1A1A1A;
     pointer-events: none;
 }
